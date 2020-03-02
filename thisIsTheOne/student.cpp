@@ -84,11 +84,11 @@ void Student::setDays(int days[])
 void Student::print()
 {
 	cout << left << setw(10) << studentID;
-	cout << left << setw(10) << "First Name: " << setw(10) << FN;
-	cout << left << setw(10) << "Last Name: " << setw(10) << LN;
-	cout << left << setw(10) << "Email: " << setw(30)<<studentEmail;
-	cout << left << setw(5) << "Age: " <<setw(10) << age;
-	cout << left << setw(10)<< "daysInCourse: "<< setw(1) << "{" << days[0] << ", " << days[1] << ", " << days[2] <<setw(7)<< "}";
+	cout << left << setw(10) << "First Name: " << setw(10) << getFN();
+	cout << left << setw(10) << "Last Name: " << setw(10) << getLN();
+	cout << left << setw(10) << "Email: " << setw(30)<<getemail();
+	cout << left << setw(5) << "Age: " <<setw(10) << getAge();
+	cout << left << setw(10)<< "daysInCourse: "<< setw(1) << "{" << getDays()[0] << ", " << getDays()[1] << ", " << getDays()[2] <<setw(7)<< "}";
 	cout << left << setw(1) << "Degree Program: ";
 }
 		
